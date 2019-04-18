@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+	<title>Digital Learning Journey</title>
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="spectre-icons.css">
+	<style type="text/css">
+		@media (max-width: 980px){
+			.company {
+				width: 80%;
+			}
+			.ms-2 {
+				margin: 0;
+			}
+			.submitContainer {
+				width: 50%;
+			}
+			#banner {
+				width: 100%;
+			}
+			.input {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a target="-blank"href="#">Einladung</a>
+			<a target="-blank"href="#">Digital Learning Journey Broschüre</a>
+			<a target="-blank"href="#">Über Capnamic</a>
+		</nav>
+		<img id="banner" src="./assets/banner.png">
+		<i onclick="scrollIntro()" class="icon icon-3x icon-arrow-down"></i>
+	</header>
+	<main>
+		<section class="intro" id="intro">
+				<h2>Im Rahmen der Digital Learning Journey vom 23. bis 24. Oktober 2019, können Sie am zweiten Tag Einzelgespräche mit Unternehmen aus dem Capnamic-Portfolio führen.</h2>
+				<h2>Bitte teilen Sie uns Ihre Wünsche mit, wir werden die Anfragen gemeinsam koordinieren und uns vier Wochen vor dem Reisetermin erneut bezüglich konkreter Terminvereinbarungen bei Ihnen melden.</h2>
+				<h2>Auf den folgenden Folien finden Sie Kurzsteckbriefe der Portfolio-Unternehmen. Klicken Sie auf "Kennen Lernen" bei Ihren Favoriten und senden Sie uns die Liste. Danke!</h2>
+				<div class="columns input">
+					<input class="form-input column col-9 col-s-12" type="text" placeholder="Unternehmensname" style="padding: 0 0.5em;" id="nameInput">
+					<button class="btn los column col-3 col-s-6" onclick="start()">Los geht's</button>
+				</div>
+		</section>
+		<div class="alert">
+			<div class="loading"></div>
+			<div class="thanks">Danke für Ihre Rückmeldung!<br><span style="font-size: 0.8em">Wir leiten Sie nun weiter zu Capnamic Homepage</span></div>
+		</div>
+		<div class="modal" id="modal-id">
+		  <a target="-blank"class="modal-overlay" aria-label="Close" id="close"></a>
+		  <div class="modal-container">
+		    <div class="modal-header">
+		      <div class="modal-title h5">LeanIX</div>
+		    </div>
+		    <div class="modal-body">
+		      <div class="content">
+		      	<img class="img-responsive" alt="company content" src="./assets/details/leanix.PNG" id="slide">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<h3>Portfolio-Companies</h3>
+		<section class="columns companies">
+			<div class="company">
+				<div class="card">
+						<a target="-blank"target="-blank"href="https://lanalabs.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/lanalabs.jpg" alt="LanaLabs"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="LanaLabs"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+	                <button class="btn btn-primary float-right more" data-value="LanaLabs"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+	                <a target="-blank"href="https://lanalabs.com/"><div class="card-title h5">LanaLabs</div></a>
+	                <div class="card-subtitle text-gray">Software, Berlin</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://userlane.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/userlane.jpg" alt="Userlane"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add"  data-value="Userlane"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+	                <button class="btn btn-primary float-right more" data-value="Userlane"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+	                <a target="-blank"href="https://userlane.com/"><div class="card-title h5">Userlane</div></a>
+	                <div class="card-subtitle text-gray">Software Navigation, München</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://iwelcome.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/iwelcome.jpg" alt="iWelcome"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="iWelcome"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+									<button class="btn btn-primary float-right more" data-value="iWelcome"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+									<a target="-blank"href="https://iwelcome.com/"><div class="card-title h5">iWelcome</div></a>
+	                <div class="card-subtitle text-gray">Authentication Software, Amersfoort (NE)</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://agorize.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/agorize.jpg" alt="Agorize"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="Agorize"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+									<button class="btn btn-primary float-right more" data-value="Agorize"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+									<a target="-blank"href="https://agorize.com/"><div class="card-title h5">Agorize</div></a>
+	                <div class="card-subtitle text-gray">Innovation Challenge Platform, Paris</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://leanix.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/leanix.jpg" alt="LeanIX"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="LeanIX"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+									<button class="btn btn-primary float-right more" data-value="LeanIX"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+									<a target="-blank"href="https://leanix.com/"><div class="card-title h5">LeanIX</div></a>
+	                <div class="card-subtitle text-gray">Management of Software Architecture, Bonn/Boston</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://contiamo.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/contiamo.jpg" alt="Contiamo"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="Contiamo"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+									<button class="btn btn-primary float-right more" data-value="Contiamo"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+									<a target="-blank"href="https://contiamo.com/"><div class="card-title h5">Contiamo</div></a>
+	                <div class="card-subtitle text-gray">Data Analysis, Berlin</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://acellere.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/acellere.jpg" alt="Acellere"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="Acellere"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+									<button class="btn btn-primary float-right more" data-value="Acellere"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+									<a target="-blank"href="https://acellere.com/"><div class="card-title h5">Acellere</div></a>
+	                <div class="card-subtitle text-gray">Software-Testing, Frankfurt a.M</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+        	<div class="slide"></div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://onedot.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/onedot.png" alt="OneDot" style="margin: 0 auto;"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="OneDot"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+									<button class="btn btn-primary float-right more" data-value="OneDot"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+									<a target="-blank"href="https://onedot.com/"><div class="card-title h5">OneDot</div></a>
+	                <div class="card-subtitle text-gray">360° Consumable Data, Schlieren(CH)</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://crossengage.io/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/crossengage.jpg" alt="CrossEngage"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="CrossEngage"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+									<button class="btn btn-primary float-right more" data-value="CrossEngage"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+									<a target="-blank"href="https://crossengage.io/"><div class="card-title h5">CrossEngage</div></a>
+	                <div class="card-subtitle text-gray">Moment Marketing, Berlin</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://innoactive.de/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/innoactive.jpg" alt="Innoactive"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="Innoactive"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+	                <button class="btn btn-primary float-right more" data-value="Innoactive"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+	                <a target="-blank"href="https://innoactive.de/"><div class="card-title h5">Innoactive</div></a>
+	                <div class="card-subtitle text-gray">VR-Learning Platform, München</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://nomagic.ai/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/nomagic.jpg" alt="NoMagic"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="NoMagic"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+									<button class="btn btn-primary float-right more" data-value="NoMagic"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+									<a target="-blank"href="https://nomagic.ai/"><div class="card-title h5">NoMagic</div></a>
+	                <div class="card-subtitle text-gray">Robotic Manipulation, Warsaw</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+					</div>
+					<div class="company">
+						<div class="card">
+								<a target="-blank"href="https://statice.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/statice.jpg" alt="Statice"></div></a>
+									<div class="card-header">
+										<button class="btn btn-primary float-right ms-2 add" data-value="Statice"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+										<button class="btn btn-primary float-right more" data-value="Statice"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+										<a target="-blank"href="https://statice.com/"><div class="card-title h5">Statice</div></a>
+										<div class="card-subtitle text-gray">Data Anonymization, Berlin</div>
+									</div>
+									<div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+								</div>
+					</div>
+        	<div class="company">
+				<div class="card">
+						<a target="-blank"href="https://chronext.de/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/chronext.jpg" alt="Chronext"></div></a>
+	              <div class="card-header">
+	                <button class="btn btn-primary float-right ms-2 add" data-value="Chronext"><i class="icon icon-bookmark"></i> Kennen lernen</button>
+									<button class="btn btn-primary float-right more" data-value="Chronext"><i class="icon icon-plus"></i> Mehr Erfahren</button>
+									<a target="-blank"href="https://chronext.de/"><div class="card-title h5">Chronext</div></a>
+	                <div class="card-subtitle text-gray">Marketplace for Luxury Watches, Zug (CH)</div>
+	              </div>
+	              <div class="card-body">An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.</div>
+	            </div>
+        	</div>
+		</section>
+		<div class="submitContainer" id="list">
+			<h6>Ausgewählt:</h6>
+			<ul class="companyList">
+			</ul>
+			<button class="btn send" onclick="sendAnswer()">Senden</button>
+		</div>
+	</main>
+	<footer class="columns">
+		<div class="column">
+			<div class="columns logoContainer">
+				<img src="./assets/ssk.png" class="img-fit-cover credits" alt="...">
+				<img src="./assets/capnamic_logo_white-medium.png" class="img-fit-cover credits" alt="...">
+			<div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

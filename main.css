@@ -1,0 +1,299 @@
+body {
+	margin: 0;
+}
+
+main {
+	padding: 0 2em;
+	text-align: justify;
+}
+
+a:visited {
+	color: #444
+}
+
+#banner {
+	display: block;
+	margin: 0 auto;
+	margin-top: 5%;
+	width: 40%;
+}
+
+.headline {
+	font-size: 3em;
+	text-align: center;
+	margin-top: 1em;
+}
+
+header {
+	margin: 0 0 2em 0;
+	text-align: center;
+	height: 100vh;
+}
+
+.intro > h2 {
+	width: 60%;
+	height: 25%;
+	margin: 0 auto;
+}
+
+.intro {
+	margin: 0 auto;
+	padding-top: 10%;
+	height: 100vh;
+}
+
+.los {
+	margin-left: 1em;
+	max-width: 6em;
+	height: 2em;
+	font-size: 1.5em;
+}
+
+.company {
+	margin: 5em auto;
+	width: 60%;
+}
+
+.input {
+	justify-content: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.companies {
+}
+
+h3 {
+	text-align: center;
+}
+
+footer {
+	background: red;
+	height: 30%;
+}
+
+.menu{
+	margin: 2em;
+}
+
+.credits {
+	width: 200px;
+	margin: 1em 2em;
+}
+
+.logoContainer {
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+p {
+	text-align: center;
+	margin: 2em 0 0 0;
+	color: white;
+	font-weight: 800;
+}
+
+.linkMenu {
+	list-style-type: none;
+	text-align: center;
+}
+
+a {
+	color: white;
+}
+
+a:hover  {
+	color: #eee
+}
+
+.ms-2 {
+	margin: 0 1em;
+}
+
+.btn {
+	background-color: red;
+	border: 0;
+	color: white;
+}
+
+.btn:hover {
+	background-color: darkgrey;
+	border: 0;
+}
+
+.btn.btn-primary {
+	background-color: red;
+	border: 0;
+}
+
+.btn.btn-primary:hover {
+	background-color: #444;
+	border: 0;
+}
+
+.btn:focus {
+	background-color: #444;
+	border: 0;
+}
+
+.btn.btn-primary:focus {
+	background-color: #444;
+	border: 0;
+}
+
+li {
+	width: 50%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.modal-container {
+	max-width: 1100px;
+	max-height: 1000px;
+}
+
+.submitContainer {
+	position: fixed;
+	left: 0;
+	bottom: 5%;
+	background: white;
+	border-top: 2px solid #3e7dc1;
+	border-right: 2px solid #3e7dc1;
+	border-bottom: 2px solid #3e7dc1;
+	width: 20%;
+	border-radius: 3px;
+	min-height: 30%;
+	padding: 0.5rem;
+	display: none;
+}
+
+.companyList {
+	list-style-type: none;
+	margin: 0;
+}
+
+.companyList > li {
+	margin: 0;
+	padding: 0.5em;
+	border-bottom: 1px solid #3e7dc1;
+	width: 100%;
+}
+
+.send {
+	margin: 1em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #3e7dc1;
+}
+
+.thanks {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.companyItem > span > i {
+	float: right;
+	cursor: pointer;
+	padding: 0.7em;
+}
+
+.alert {
+	position: fixed;
+	width: 50%;
+	left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    background: white;
+    color: #3e7dc1;
+    border: 1px solid #3e7dc1;
+    padding: 1em;
+    top: -4em;
+    transition: 1s;
+    border-radius: 3px;
+}
+
+.visible {
+	top: 1em;
+}
+
+.loading::after {
+	border-bottom-color: #3e7dc1;
+	border-left-color: #3e7dc1;
+}
+
+.show::after {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+nav {
+	padding: 2em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: white;
+	z-index: 3;
+}
+
+nav > a {
+	padding: 0 3%;
+	color: red;
+	font-size: 1.2em;
+	font-weight: 800;
+}
+
+nav > a:hover {
+	color: rgba(255, 0, 0, 0.5);
+	text-decoration: none;
+}
+
+.intro {
+	height: 100vh;
+	text-align: center;
+}
+
+.icon {
+	cursor: pointer;
+}
+
+.form-input {
+	font-size: 1.5em;
+	height: 2em;
+}
+
+a:hover {
+	color: #3e7dc1;
+	text-decoration: none;
+}
+
+.btn.btn-primary.more {
+	background: #444;
+}
+
+.btn.btn-primary.more:hover {
+	background: red;
+}
+
+a > .card-title {
+	color: #444;
+}
+
+a > .card-title:hover {
+	color: darkgrey;
+}
+
+#background {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+}
