@@ -23,7 +23,7 @@ const close = document.getElementById('close');
 const list = document.getElementById('list');
 const nameInput = document.querySelector('nameInput');
 const companiesSection = document.querySelector('.companies');
-const loading = document.querySelector('.loading');
+const loading = document.querySelector('.spinner');
 const thanks = document.querySelector('.thanks');
 const slide = document.querySelector('#slide');
 const title = document.querySelector('.modal-title');
@@ -34,7 +34,10 @@ function toggleModal(elem){
 	if(modal.classList.length > 1){
 		modal.classList.remove('active')
 	} else {
+		// shows loading for 1 second
+		showLoading();
 		const company = elem.dataset.value;
+		console.log('Company: ', company)
 		const file = `./assets/details/${company}.PNG`;
 		slide.src = file;
 		title.textContent = company;
@@ -159,10 +162,18 @@ function sendAnswer(){
 }
 
 function start(){
-	console.log('Element: ', companiesSection)
+	// console.log('Element: ', companiesSection)
 	companiesSection.scrollIntoView({behavior: 'smooth'});
 	const val = document.querySelector('#nameInput').value
 	answerSet.Teilnehmer = val;
+}
+
+function showLoading(){
+	loading.style.display = 'block'
+	setTimeout(function(){
+		loading.style.display = 'none'
+	},1000)
+	const currentState = loading.style.display;
 }
 
 // Event Listeners
