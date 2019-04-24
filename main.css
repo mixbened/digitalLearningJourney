@@ -57,7 +57,7 @@ header {
 .input {
 	justify-content: center;
 	width: 50%;
-	margin: 0 auto;
+	margin: 5% auto;
 }
 
 .companies {
@@ -190,6 +190,7 @@ li {
 
 .thanks {
 	display: none;
+	font-size: 2em;
 }
 
 .show {
@@ -212,13 +213,12 @@ li {
     color: #3e7dc1;
     border: 1px solid #3e7dc1;
     padding: 1em;
-    top: -4em;
     transition: 1s;
     border-radius: 3px;
 }
 
 .visible {
-	top: 1em;
+	top: 45%;
 }
 
 .loading::after {
@@ -257,7 +257,7 @@ nav > a:hover {
 
 .intro {
 	height: 100vh;
-	text-align: center;
+	text-align: justify;
 }
 
 .icon {
@@ -296,4 +296,8 @@ a > .card-title:hover {
 	bottom: 0;
 	min-width: 100%; 
 	min-height: 100%;
+}
+
+.form-select {
+	margin: 1em 0;
 }

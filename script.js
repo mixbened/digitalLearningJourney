@@ -13,7 +13,8 @@ var answerSet = {
 	"Innoactive": "",
 	"NoMagic": "",
 	"Chronext": "",
-	"Statice": ""
+	"Statice": "",
+	"Zeit": ""
 }
 
 // HTML Elements
@@ -24,9 +25,11 @@ const list = document.getElementById('list');
 const nameInput = document.querySelector('nameInput');
 const companiesSection = document.querySelector('.companies');
 const loading = document.querySelector('.spinner');
+const loadingModal = document.querySelector('.spinnerModal');
 const thanks = document.querySelector('.thanks');
 const slide = document.querySelector('#slide');
 const title = document.querySelector('.modal-title');
+const time = document.querySelector('.form-select');
 
 // actions
 function toggleModal(elem){
@@ -35,7 +38,7 @@ function toggleModal(elem){
 		modal.classList.remove('active')
 	} else {
 		// shows loading for 1 second
-		showLoading();
+		showLoadingModal();
 		const company = elem.dataset.value;
 		console.log('Company: ', company)
 		const file = `./assets/details/${company}.PNG`;
@@ -59,16 +62,16 @@ function alert_custom(){
 	const alert = document.querySelector('.alert');
 	// console.log('Alert: ', alert.classList)
 	if(alert.classList.length > 1){
-		alert.classList.remove('visible')
+		alert.classList.remove('visible');
 	} else {
-		alert.classList.add('visible')
+		alert.classList.add('visible');
+		showLoading();
 		setTimeout(() => {
-			loading.classList.add('hide')
-			thanks.classList.add('show')
-			setTimeout(() => {
-				window.location.href = 'https://www.capnamic.com';
-			},2500)
-		},3000)
+			thanks.style.display = 'block'
+		}, 800)
+		setTimeout(() => {
+			window.location.href = 'https://www.capnamic.com';
+		},3000);
 	}
 }
 
@@ -124,7 +127,9 @@ function sendAnswer(){
 		console.log('Found that check:', i)
 		if(i > -1) answerSet[comp] = "x"
 	}
-	console.log('Answers', answerSet)
+	const timeValue = time.value;
+	answerSet.Zeit = timeValue;
+	// console.log('Time: ', time.value)
 	// check for name 
 	if(answerSet.Teilnehmer){
 		const url = "https://hooks.zapier.com/hooks/catch/3341374/aikm1l/";
@@ -148,7 +153,8 @@ function sendAnswer(){
 				"CrossEngage": "",
 				"Innoactive": "",
 				"NoMagic": "",
-				"Chronext": ""
+				"Chronext": "",
+				"Zeit": ""
 			}
 			companies = [];
 			checkList();
@@ -171,9 +177,17 @@ function start(){
 function showLoading(){
 	loading.style.display = 'block'
 	setTimeout(function(){
+		console.log('Stop!')
 		loading.style.display = 'none'
 	},1000)
-	const currentState = loading.style.display;
+}
+
+function showLoadingModal(){
+	loadingModal.style.display = 'block'
+	setTimeout(function(){
+		console.log('Stop!')
+		loadingModal.style.display = 'none'
+	},800)
 }
 
 // Event Listeners
