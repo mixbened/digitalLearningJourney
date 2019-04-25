@@ -23,6 +23,12 @@
 			}
 			.input {
 				width: 100%;
+				margin: 5%;
+				padding: 5%;
+			}
+			header {
+				height: 60vh;
+				margin-top: 20%;
 			}
 		}
 	</style>
@@ -31,7 +37,7 @@
 	<header>
 		<nav>
 			<a target="_blank"href="./assets/files/Einladung.pdf">Einladung</a>
-			<a href="#" style="font-size: 1.8em">Digital Learning Journey 2019</a>
+			<h3 style="font-size: 1.8em; display: inline; color: red; font-weight: 800">Digital Learning Journey 2019</h3>
 			<a target="_blank"href="./assets/files/Profile Capnamic Ventures 2019.pdf">Über Capnamic</a>
 		</nav>
 		<img id="banner" src="./assets/banner.png">
@@ -39,8 +45,14 @@
 	</header>
 	<main>
 		<section class="intro" id="intro">
-				<h2>Im Rahmen der Digital Learning Journey vom 23. bis 24. Oktober 2019, können Sie für sich spannende Unternehmen aus dem Capnamic Portfolio genauer kennen lernen.</h2>
-				<h2>Im folgende finden Sie Kurzsteckbriefe der Portfolio-Unternehmen. Teilen Sie uns mit Klick auf "Kennen Lernen" mit, mit welchen Start-Ups Sie sich gerne weiter austauschenmöchten. Weiterhin können Sie einen für sich passenden Zeitraum auswählen. Wir versuchen in der Planung alle Wünsche zu berücksichtigen.</h2>
+				<h2>Im Rahmen der Digital Learning Journey vom 23. bis 24. Oktober 2019, bieten
+					wir Ihnen die Möglichkeit spannende Start-ups aus dem Capnamic-Portfolio in
+					Einzelgesprächen kennen zu lernen.</h2>
+				<h2>Im folgenden möchten wir Ihnen die Capnamic-Portfolio-Unternehmen etwas
+					näher vorstellen. Teilen Sie uns mit einem Klick auf "Kennen Lernen" mit,
+					welches Start-up Sie in welchem Zeitraum gerne am 24. Oktober in Berlin
+					treffen möchten. Etwa vier Wochen vor Beginn der der Digital Learning
+					Journey kommen wir mit konkreten Terminvorschlägen auf Sie zu.</h2>
 				<div class="columns input">
 					<input class="form-input column col-9 col-s-12" type="text" placeholder="Unternehmensname" style="padding: 0 0.5em;" id="nameInput">
 					<button class="btn los column col-3 col-s-6" onclick="start()">Los geht's</button>
@@ -70,9 +82,157 @@
 		    </div>
 		  </div>
 		</div>
-		<h3>Portfolio Unternehmen</h3>
+		<section>
+			<h3>Portfolio Unternehmen</h3>
+			<table class="table">
+					<thead>
+						<tr class="headings">
+							<th>Unternehmen</th>
+							<th>Digital Transformation</th>
+							<th>Big Data</th>
+							<th>Virtual Reality</th>
+							<th>Artificial Intelligence</th>
+							<th>New Work</th>
+							<th>Robotics</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="">
+							<td>LanaLabs</td>
+							<td></td>
+							<td>X</td>
+							<td></td>
+							<td>X</td>
+							<td></td>
+							<td></td>
+							<td><a href="#lanalabs"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+							<td>Userlane</td>
+							<td>X</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><a href="#userlane"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>iWelcome</td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><a href="#iwelcome"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>Agorize</td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>X</td>
+								<td></td>
+								<td><a href="#agorize"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>LeanIX</td>
+								<td>X</td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><a href="#leanix"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>Contiamo</td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td><a href="#contiamo"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>OneDot</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td><a href="#onedot"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>Acellere</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td><a href="#acellere"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>CrossEngage</td>
+								<td>X</td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><a href="#crossengage"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>Innoactive</td>
+								<td></td>
+								<td></td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><a href="#innoactive"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>Statice</td>
+								<td></td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><a href="#statice"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>NoMagic</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>X</td>
+								<td><a href="#nomagic"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+						<tr class="">
+								<td>Chronext</td>
+								<td>X</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><a href="#chronext"><button class="btn"><i class="icon icon-arrow-right"></button></i></a></td>
+						</tr>
+					</tbody>
+				</table>
+		</section>
 		<section class="columns companies">
-			<div class="company">
+			<div class="company" id="lanalabs">
 				<div class="card">
 						<a target="-blank"target="-blank"href="https://lanalabs.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/lanalabs.jpg" alt="LanaLabs"></div></a>
 	              <div class="card-header">
@@ -84,7 +244,7 @@
 	              <div class="card-body">LanaLabs bietet mit ihrer Process Mining Plattform eine flexible und vollautomatische Prozessanalyse.</div>
 	            </div>
         	</div>
-        	<div class="company">
+        	<div class="company" id="userlane">
 				<div class="card">
 						<a target="-blank"href="https://userlane.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/userlane.jpg" alt="Userlane"></div></a>
 	              <div class="card-header">
@@ -96,7 +256,7 @@
 	              <div class="card-body">Userlane hilft mit einem 'Software-Navigations-System' dem Softwareanbietern neuen Kunden die Software zu erklären und großen Unternehmen ihre Mitarbeiter mit neuem Programmen vertraut zu machen.</div>
 	            </div>
         	</div>
-        	<div class="company">
+        	<div class="company" id="iwelcome">
 				<div class="card">
 						<a target="-blank"href="https://iwelcome.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/iwelcome.jpg" alt="iWelcome"></div></a>
 	              <div class="card-header">
@@ -108,7 +268,7 @@
 	              <div class="card-body">DSGVO-konformes Identitätsmanagement für Endkonsumenten um als Unternehmen eine stärkere Kundenbeziehung aufzubauen.</div>
 	            </div>
         	</div>
-        	<div class="company">
+        	<div class="company" id="agorize">
 				<div class="card">
 						<a target="-blank"href="https://agorize.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/agorize.jpg" alt="Agorize"></div></a>
 	              <div class="card-header">
@@ -120,7 +280,7 @@
 	              <div class="card-body">Agorize bietet eine Plattform auf der Studenten, Start-Ups und Corporates zusammen Innovations-Challenges lösen.</div>
 	            </div>
         	</div>
-        	<div class="company">
+        	<div class="company" id="leanix">
 				<div class="card">
 						<a target="-blank"href="https://leanix.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/leanix.jpg" alt="LeanIX"></div></a>
 	              <div class="card-header">
@@ -132,7 +292,7 @@
 	              <div class="card-body">Software um seine IT-Infrastruktur agil und flexibel in einem schlanken Interface zu managen.</div>
 	            </div>
         	</div>
-        	<div class="company">
+        	<div class="company" id="contiamo">
 				<div class="card">
 						<a target="-blank"href="https://contiamo.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/contiamo.jpg" alt="Contiamo"></div></a>
 	              <div class="card-header">
@@ -144,7 +304,7 @@
 	              <div class="card-body">Contiamo sorgt für die Verfügbarkeit und Nutzbarkeit von Daten, die Unternehmen intern und extern zur Verfügung stehen.</div>
 	            </div>
         	</div>
-        	<div class="company">
+        	<div class="company" id="acellere">
 				<div class="card">
 						<a target="-blank"href="https://acellere.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/acellere.jpg" alt="Acellere"></div></a>
 	              <div class="card-header">
@@ -157,7 +317,7 @@
 	            </div>
         	</div>
         	<div class="slide"></div>
-        	<div class="company">
+        	<div class="company" id="onedot">
 				<div class="card">
 						<a target="-blank"href="https://onedot.com/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/onedot.png" alt="OneDot" style="margin: 0 auto;"></div></a>
 	              <div class="card-header">
@@ -169,7 +329,7 @@
 	              <div class="card-body">Onedot konsolidiert produktbezogene Daten aus verschiedenen Datentypen um händische Arbeit in Unternehmen zu reduzieren.</div>
 	            </div>
         	</div>
-        	<div class="company">
+        	<div class="company" id="crossengage">
 				<div class="card">
 						<a target="-blank"href="https://crossengage.io/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/crossengage.jpg" alt="CrossEngage"></div></a>
 	              <div class="card-header">
@@ -181,7 +341,7 @@
 	              <div class="card-body">CrossEngage führt Kundendaten aus verschiedenen Quellen zusammen und lässt die Customer Relation über verschiedene Kanäle organisieren.</div>
 	            </div>
         	</div>
-        	<div class="company">
+        	<div class="company" id="innoactive">
 				<div class="card">
 						<a target="-blank"href="https://innoactive.de/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/innoactive.jpg" alt="Innoactive"></div></a>
 	              <div class="card-header">
@@ -193,7 +353,7 @@
 	              <div class="card-body">Innoactive hat eine Content-Management-Plattform für VR-Anwendungen geschaffen. Großkunden nutzen die Plattform um VR-Trainings in Produktion & Industrie einzusetzen.</div>
 	            </div>
         	</div>
-        	<div class="company">
+        	<div class="company" id="nomagic">
 				<div class="card">
 						<a target="-blank"href="https://nomagic.ai/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/nomagic.jpg" alt="NoMagic"></div></a>
 	              <div class="card-header">
@@ -205,7 +365,7 @@
 	              <div class="card-body">AI/ML-Software to control Hardware in Warehouses and Retail.</div>
 	            </div>
 					</div>
-					<div class="company">
+					<div class="company" id="statice">
 						<div class="card">
 								<a target="-blank"href="https://statice.ai/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/statice.jpg" alt="Statice"></div></a>
 									<div class="card-header">
@@ -217,7 +377,7 @@
 									<div class="card-body">Statice ermöglicht durch dynamische anonymisierung von (Kunden-) Daten weitere Datenschutz-konforme Möglichkeiten für tiefergehender Analysen.</div>
 								</div>
 					</div>
-        	<div class="company">
+        	<div class="company" id="chronext">
 				<div class="card">
 						<a target="-blank"href="https://chronext.de/"><div class="card-image"><img class="img-responsive p-centered" src="./assets/companies/chronext.jpg" alt="Chronext"></div></a>
 	              <div class="card-header">

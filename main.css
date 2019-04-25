@@ -31,7 +31,7 @@ header {
 }
 
 .intro > h2 {
-	width: 60%;
+	width: 75%;
 	height: 25%;
 	margin: 0 auto;
 }
@@ -65,6 +65,7 @@ header {
 
 h3 {
 	text-align: center;
+	margin-bottom: 10%;
 }
 
 footer {
@@ -300,4 +301,29 @@ a > .card-title:hover {
 
 .form-select {
 	margin: 1em 0;
+}
+
+td {
+	font-weight: 800;
+	text-align: center
+}
+
+td:nth-child(1){
+	text-align: left;
+	font-weight: 400;
+}
+
+tr:hover {
+	background: rgba(228, 228, 228, 0.5);
+	cursor: pointer;
+}
+
+.table {
+	width: 80%;
+	margin: 5% auto;
+}
+
+.headings:hover {
+	background: white;
+	cursor: auto;
 }
