@@ -309,6 +309,7 @@ td, th {
 
 th:nth-child(1){
 	text-align: left;
+	font-weight: 400;
 }
 
 td:nth-child(1){
@@ -330,4 +331,11 @@ tr:hover {
 .headings:hover {
 	background: white;
 	cursor: auto;
+}
+
+.visiting {
+	background: rgba(62, 125, 193, 0.3);
+}
+.visiting:hover {
+	background: rgba(62, 125, 193, 0.3);
 }
