@@ -34,6 +34,7 @@ header {
 	width: 75%;
 	height: 25%;
 	margin: 0 auto;
+	background: white;
 }
 
 .intro {
@@ -52,15 +53,13 @@ header {
 .company {
 	margin: 5em auto;
 	width: 60%;
+	background: white;
 }
 
 .input {
 	justify-content: center;
 	width: 50%;
 	margin: 5% auto;
-}
-
-.companies {
 }
 
 h3 {
@@ -325,6 +324,7 @@ tr:hover {
 .table {
 	width: 80%;
 	margin: 0 auto;
+	background: white;
 }
 
 .headings:hover {
