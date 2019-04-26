@@ -14,6 +14,10 @@ var answerSet = {
 	"NoMagic": "",
 	"Chronext": "",
 	"Statice": "",
+	"adjust": "",
+	"Circula": "",
+	"Staffbase": "",
+	"Unu": "",
 	"Zeit": ""
 }
 
@@ -154,6 +158,11 @@ function sendAnswer(){
 				"Innoactive": "",
 				"NoMagic": "",
 				"Chronext": "",
+				"Statice": "",
+				"adjust": "",
+				"Circula": "",
+				"Staffbase": "",
+				"Unu": "",
 				"Zeit": ""
 			}
 			companies = [];
