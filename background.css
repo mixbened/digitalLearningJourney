@@ -52,6 +52,10 @@ canvas:hover {
     top: 75%;
     animation-delay: 6s;
   }
+
+  .card > a:hover {
+    color: white;
+  }
   
   
   @keyframes floatingPointsLeft{

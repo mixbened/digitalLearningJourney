@@ -153,6 +153,24 @@ li {
 	max-height: 1000px;
 }
 
+.labelImage {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1% 2%;
+	background: rgb(255, 176, 79);
+	border-radius: 0 0 0 8px;
+	font-size: 75%;
+}
+
+.labelImage:hover {
+	color: white;
+}
+
+.containerImage {
+	position: relative;
+}
+
 .submitContainer {
 	position: fixed;
 	left: 0;
@@ -270,7 +288,7 @@ nav > a:hover {
 }
 
 a:hover {
-	color: #3e7dc1;
+	color: #eee;
 	text-decoration: none;
 }
 
